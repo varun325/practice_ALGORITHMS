@@ -29,4 +29,4 @@ bool isDeadEnd(Node *root)
 }
 
 
-//fails on some test cases where the root has one of the values that could be possible dead end.
+//fails on some test cases where the root has one of the values that could be possible dead end
