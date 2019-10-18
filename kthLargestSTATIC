@@ -1,0 +1,16 @@
+void kthLargest(Node *root, int k)
+{
+    static int x=k;
+    
+    if(!root)
+        return;
+    
+    kthLargest(root->right,k);
+    if(!(x--))
+        cout<<root->key<<" ";
+    kthLargest(root->left,k);
+    //Your code here
+}
+
+
+//problem : it only works for one test case as the static is only initialised one for the whole program.
